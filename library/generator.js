@@ -25,5 +25,7 @@ function consumeWithTimeout(iterator, timeoutSeconds) {
   }, 1000);
 }
 
-const gen = weekdayGenerator();
-consumeWithTimeout(gen, 10);
+module.exports = {
+  weekdayGenerator,
+  consumeWithTimeout
+};
